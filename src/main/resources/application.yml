@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://ubwf3iszi2cpmbk9:3Jh98EegIqQnZ0loZvM9@b0zra9wohxdsetqgufe1-mysql.services.clever-cloud.com:3306/b0zra9wohxdsetqgufe1?autoReconnect=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ubwf3iszi2cpmbk9
+    password: 3Jh98EegIqQnZ0loZvM9
+    hikari:
+      idle-timeout: 10000
+      connection-timeout: 15000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+      pool-name: springHikariCP
+      minimum-idle: 5
+      connection-test-query: select 1
+    jpa:
+      generate-ddl: false
+      hibernate:
+        show_sql: true
+    jackson:
+      time-zone: Asia/Kolkata
+  app:
+    security:
+      jwtSecret: zdtlD3JK56m6wTTgsNFhqzjqP
